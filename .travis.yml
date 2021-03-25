@@ -9,7 +9,7 @@ script:
   - docker run -e CI=true abdelrhmansafwat/react-fib-test npm test
 
 after_success:
-  - docker build -t abdelrhman/multi-client ./client
+  - docker build -t abdelrhmansafwat/multi-client ./client
   - docker build -t abdelrhmansafwat/multi-nginx ./nginx
   - docker build -t abdelrhmansafwat/multi-server ./server
   - docker build -t abdelrhmansafwat/multi-worker ./worker
